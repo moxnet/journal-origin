@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="个人站点,IT,code,program,project,java,perl" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="IT从业者，多年老司机。驾龄十余年，熟练驾驶Perl，Java等多种车辆，熟悉互联网路况。现供职于阿里，做域名/DNS相关coding。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jacey&#39;s Journal">
+<meta property="og:url" content="http://journal.codox.cn/index.html">
+<meta property="og:site_name" content="Jacey&#39;s Journal">
+<meta property="og:description" content="IT从业者，多年老司机。驾龄十余年，熟练驾驶Perl，Java等多种车辆，熟悉互联网路况。现供职于阿里，做域名/DNS相关coding。">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jacey&#39;s Journal">
+<meta name="twitter:description" content="IT从业者，多年老司机。驾龄十余年，熟练驾驶Perl，Java等多种车辆，熟悉互联网路况。现供职于阿里，做域名/DNS相关coding。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://journal.codox.cn/"/>
+
+
+
+
+
+  <title>Jacey's Journal</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-315540-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?73a9602f84ef41cd6ba4d6ee6fe600d1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jacey's Journal</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">我是乱写的 & 千万别当真</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2017/09/10/multi-thread-coutdownlatch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/10/multi-thread-coutdownlatch/" itemprop="url">多组程组件之CountDownLatch</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T14:36:16+08:00">
+                2017-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>java中的多线程组件比较多，前些天看了一下CountDownLatch的源码，今天拿 CountDownLatch来详细分析一下。</p>
+<h1 id="样例、代码、说明"><a href="#样例、代码、说明" class="headerlink" title="样例、代码、说明"></a>样例、代码、说明</h1><p>分析之前，我们先看一个比较简单的用法。</p>
+<h2 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h2><p>我们假设一项工作：</p>
+<ol>
+<li>需要先由3个人做准备；</li>
+<li>准备好后再由2个人进行计算；</li>
+<li>计算完后，由上级来进行输出。</li>
+<li>假设刚开始，全部人员就位。</li>
+</ol>
+<h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> thread.demo.codox.net;</div><div class="line"></div><div class="line"><span class="keyword">import</span> java.util.concurrent.CountDownLatch;</div><div class="line"><span class="keyword">import</span> java.util.concurrent.Executor;</div><div class="line"><span class="keyword">import</span> java.util.concurrent.ExecutorService;</div><div class="line"><span class="keyword">import</span> java.util.concurrent.Executors;</div><div class="line"><span class="keyword">import</span> java.util.concurrent.atomic.AtomicInteger;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CountDown</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="comment">// ID生成器</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> AtomicInteger idGenerator = <span class="keyword">new</span> AtomicInteger(<span class="number">1</span>);</div><div class="line"></div><div class="line">    <span class="comment">// 主线程，用来进行主要的准备工作和进行调用。</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</div><div class="line">        <span class="comment">// 假设工作流程要先做准备，由3个线程来做准备工作。</span></div><div class="line">        <span class="comment">// 做完准备后，由多个Worker线程进行处理，处理完毕后，由主线程进行打印。</span></div><div class="line"></div><div class="line">        <span class="comment">// prepLatch 为准备好了的latch, workLatch为工作线程完成了的latch。</span></div><div class="line">        CountDownLatch prepLatch = <span class="keyword">new</span> CountDownLatch(<span class="number">3</span>);</div><div class="line">        CountDownLatch workLatch = <span class="keyword">new</span> CountDownLatch(<span class="number">2</span>);</div><div class="line"></div><div class="line">        <span class="comment">// 生成线程池，并发准备纯种、工作线程全放到线程池。</span></div><div class="line">        ExecutorService es = Executors.newFixedThreadPool(<span class="number">10</span>);</div><div class="line">        es.execute(<span class="keyword">new</span> PrepareWorker(CountDown.idGenerator.incrementAndGet(), prepLatch));</div><div class="line">        es.execute(<span class="keyword">new</span> PrepareWorker(CountDown.idGenerator.incrementAndGet(), prepLatch));</div><div class="line">        es.execute(<span class="keyword">new</span> PrepareWorker(CountDown.idGenerator.incrementAndGet(), prepLatch));</div><div class="line"></div><div class="line">        es.execute(<span class="keyword">new</span> Worker(CountDown.idGenerator.incrementAndGet(), prepLatch,workLatch));</div><div class="line">        es.execute(<span class="keyword">new</span> Worker(CountDown.idGenerator.incrementAndGet(),prepLatch, workLatch));</div><div class="line"></div><div class="line">        workLatch.await();</div><div class="line">        System.out.println(<span class="string">"Main thread end!"</span>);</div><div class="line">        es.shutdown();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">PrepareWorker</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</div><div class="line">        <span class="keyword">private</span> CountDownLatch startLatch;</div><div class="line">        <span class="keyword">private</span> <span class="keyword">int</span> id;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="title">PrepareWorker</span><span class="params">(<span class="keyword">int</span> id, CountDownLatch latch)</span> </span>&#123;</div><div class="line">            <span class="keyword">this</span>.id = id;</div><div class="line">            <span class="keyword">this</span>.startLatch = latch;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">            System.out.println(<span class="string">"Thread "</span> + id + <span class="string">" prepare started!"</span>);</div><div class="line"></div><div class="line">            <span class="keyword">try</span> &#123;</div><div class="line">                Thread.sleep(<span class="number">2000</span>);</div><div class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</div><div class="line">                e.printStackTrace();</div><div class="line">            &#125;</div><div class="line">            System.out.println(<span class="string">"Thread "</span> + id + <span class="string">" prepare end!"</span>);</div><div class="line">            startLatch.countDown();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Worker</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</div><div class="line">        <span class="keyword">private</span> <span class="keyword">int</span> id;</div><div class="line">        <span class="keyword">private</span> CountDownLatch latch;</div><div class="line">        <span class="keyword">private</span> CountDownLatch preLatch;</div><div class="line"></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Worker</span><span class="params">(<span class="keyword">int</span> id, CountDownLatch preLatch, CountDownLatch latch)</span> </span>&#123;</div><div class="line">            <span class="keyword">this</span>.id = id;</div><div class="line">            <span class="keyword">this</span>.preLatch = preLatch;</div><div class="line">            <span class="keyword">this</span>.latch = latch;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="meta">@Override</span></div><div class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">            <span class="keyword">try</span> &#123;</div><div class="line">                preLatch.await();</div><div class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</div><div class="line">                e.printStackTrace();</div><div class="line">            &#125;</div><div class="line">            System.out.println(<span class="string">"Woker "</span> + id + <span class="string">" workout!"</span>);</div><div class="line">            latch.countDown();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/* OUTPUT:</span></div><div class="line"><span class="comment">Thread 3 prepare started!</span></div><div class="line"><span class="comment">Thread 4 prepare started!</span></div><div class="line"><span class="comment">Thread 2 prepare started!</span></div><div class="line"><span class="comment">Thread 4 prepare end!</span></div><div class="line"><span class="comment">Thread 2 prepare end!</span></div><div class="line"><span class="comment">Thread 3 prepare end!</span></div><div class="line"><span class="comment">Woker 5 workout!</span></div><div class="line"><span class="comment">Woker 6 workout!</span></div><div class="line"><span class="comment">Main thread end!</span></div><div class="line"><span class="comment"> */</span></div></pre></td></tr></table></figure>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment">* 唯一的构造函数，由一个正数。当countDown()，并到0时，在await()中阻塞的调用会返回。如果用负数初始化，会报</span></div><div class="line"><span class="comment">* IllegalArgumentException异常。</span></div><div class="line"><span class="comment">*/</span></div><div class="line">CountDownLatch(<span class="keyword">int</span> count)</div><div class="line"><span class="comment">// 一直阻塞，直到countDown()到0</span></div><div class="line"><span class="function"><span class="keyword">void</span>	<span class="title">await</span><span class="params">()</span></span></div><div class="line"><span class="function"><span class="comment">// 阻塞，直到countDown()到0，或超时</span></span></div><div class="line"><span class="function"><span class="keyword">boolean</span>	<span class="title">await</span><span class="params">(<span class="keyword">long</span> timeout, TimeUnit unit)</span></span></div><div class="line"><span class="function"><span class="comment">// 每调用一次，由构造函数初始化的值count减1，直到0，这时在await()中阻塞的函数返回。</span></span></div><div class="line"><span class="function"><span class="keyword">void</span>	<span class="title">countDown</span><span class="params">()</span></span></div><div class="line"><span class="function"><span class="comment">// 返回当前的count值。(实际底层使用的是int值。构造函数初始化时也是用int来初始化的。)</span></span></div><div class="line"><span class="function"><span class="keyword">long</span>	<span class="title">getCount</span><span class="params">()</span></span></div></pre></td></tr></table></figure>
+<h1 id="实现分析"><a href="#实现分析" class="headerlink" title="实现分析"></a>实现分析</h1><h2 id="构成"><a href="#构成" class="headerlink" title="构成"></a>构成</h2><p>我们来看LatchDownLatch的构造函数。在内部，使用一个继承了AQS（后续简称AQS）的同步器来实现，并重新实现了AQS 的 int tryAcquireShared(int acquires) 和 boolean tryAcquireShared(int acquires)。</p>
+<p>其中，tryReleaseShared(int)用在CountDownLatch的countDown()；tryAcquireShared(int) 用在CountDownLatch的await()</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">   <span class="function"><span class="keyword">public</span> <span class="title">CountDownLatch</span><span class="params">(<span class="keyword">int</span> count)</span> </span>&#123;</div><div class="line">       <span class="keyword">if</span> (count &lt; <span class="number">0</span>) <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"count &lt; 0"</span>);</div><div class="line">       <span class="keyword">this</span>.sync = <span class="keyword">new</span> Sync(count);</div><div class="line">   &#125;</div><div class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Sync</span> <span class="keyword">extends</span> <span class="title">AbstractQueuedSynchronizer</span> </span>&#123;</div><div class="line">       <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">4982264981922014374L</span>;</div><div class="line"></div><div class="line">       Sync(<span class="keyword">int</span> count) &#123;</div><div class="line">           setState(count);</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       <span class="function"><span class="keyword">int</span> <span class="title">getCount</span><span class="params">()</span> </span>&#123;</div><div class="line">           <span class="keyword">return</span> getState();</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">tryAcquireShared</span><span class="params">(<span class="keyword">int</span> acquires)</span> </span>&#123;</div><div class="line">           <span class="keyword">return</span> (getState() == <span class="number">0</span>) ? <span class="number">1</span> : -<span class="number">1</span>;</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       <span class="function"><span class="keyword">protected</span> <span class="keyword">boolean</span> <span class="title">tryReleaseShared</span><span class="params">(<span class="keyword">int</span> releases)</span> </span>&#123;</div><div class="line">           <span class="comment">// Decrement count; signal when transition to zero</span></div><div class="line">           <span class="keyword">for</span> (;;) &#123;</div><div class="line">               <span class="keyword">int</span> c = getState();</div><div class="line">               <span class="keyword">if</span> (c == <span class="number">0</span>)</div><div class="line">                   <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">               <span class="keyword">int</span> nextc = c-<span class="number">1</span>;</div><div class="line">               <span class="keyword">if</span> (compareAndSetState(c, nextc))</div><div class="line">                   <span class="keyword">return</span> nextc == <span class="number">0</span>;</div><div class="line">           &#125;</div><div class="line">       &#125;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   <span class="keyword">private</span> <span class="keyword">final</span> Sync sync;</div></pre></td></tr></table></figure>
+<h2 id="函数分析"><a href="#函数分析" class="headerlink" title="函数分析"></a>函数分析</h2><h3 id="countDown"><a href="#countDown" class="headerlink" title="countDown"></a>countDown</h3><p>CountDownLatch的countDown()实现：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">   <span class="comment">// ID: snippet-1-1</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">countDown</span><span class="params">()</span> </span>&#123;</div><div class="line">       sync.releaseShared(<span class="number">1</span>);  <span class="comment">// -&gt; snippet-1-2</span></div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>sync.releaseShared(int)是来自Sync类继承的抽象类AQS:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// ID: snippet-1-2</span></div><div class="line"><span class="comment">// With in AbstractQueuedSynchronizer</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">boolean</span> <span class="title">releaseShared</span><span class="params">(<span class="keyword">int</span> arg)</span> </span>&#123;</div><div class="line">       <span class="keyword">if</span> (tryReleaseShared(arg)) &#123;   <span class="comment">// &lt;- AbstractQueuedSynchronizer中这个调用直接抛异常。实际用的Sync中重载版本</span></div><div class="line">         							<span class="comment">// -&gt; snippet-1-3</span></div><div class="line">           doReleaseShared();</div><div class="line">           <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">       &#125;</div><div class="line">       <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">   &#125;</div><div class="line">   <span class="function"><span class="keyword">protected</span> <span class="keyword">boolean</span> <span class="title">tryReleaseShared</span><span class="params">(<span class="keyword">int</span> arg)</span> </span>&#123;</div><div class="line">       <span class="keyword">throw</span> <span class="keyword">new</span> UnsupportedOperationException();</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>在Sync中的版本：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// ID: snippet-1-3</span></div><div class="line"><span class="comment">// With in CountDownLatch.Sync</span></div><div class="line">      <span class="function"><span class="keyword">protected</span> <span class="keyword">boolean</span> <span class="title">tryReleaseShared</span><span class="params">(<span class="keyword">int</span> releases)</span> </span>&#123;</div><div class="line">          <span class="comment">// Decrement count; signal when transition to zero</span></div><div class="line">          <span class="keyword">for</span> (;;) &#123;</div><div class="line">              <span class="keyword">int</span> c = getState();</div><div class="line">              <span class="keyword">if</span> (c == <span class="number">0</span>)</div><div class="line">                  <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">              <span class="keyword">int</span> nextc = c-<span class="number">1</span>;</div><div class="line">              <span class="keyword">if</span> (compareAndSetState(c, nextc))</div><div class="line">                  <span class="keyword">return</span> nextc == <span class="number">0</span>;  <span class="comment">// return snippet-1-2:6</span></div><div class="line">          &#125;</div><div class="line">        	<span class="comment">// return snippet-1-2:9</span></div><div class="line">      &#125;</div></pre></td></tr></table></figure>
+<p>这里先获取到状态值，并计算减1（即countDown）之后的值，然后把检查和设置原值做为一个原子操作来执行。如果原值变化了，没执行成功，则重新尝试；否则，返回countDown之后是否为0。<strong>使用(失败-重试方式的)乐观锁而不是synchronized方式的悲观锁，这在多线程中有较好的性能。</strong></p>
+<p>在java中，有很多的多线程类中，使用了compareAndSet(后续简称CAS)操作。这个compareAndSetState(int,int)，调用了Unsafe.compareAndSwapInt(Object, long, int, int)。这个方法的实现，需要CPU的支持，是基于CPU的 CMPXCHG 指令。</p>
+<p>在snippet-1-3中，是尝试取出state、设置state的过程。其中的state是在Sync构造时设置的值，这个值是放在AQS类中的一个由<strong>volatile</strong>标识的field。volatile可以避免 <strong>脏读</strong>。volatile和CAS一样，也需要CPU的支持。</p>
+<p>在tryReleaseShared执行完成以后，<strong>如果count减少到0，则返回snippet-1-2:6，运行doReleaseShared函数</strong>，来唤醒其它在CountDownLatch上等待的线程：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// ID: snippet-1-4</span></div><div class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">doReleaseShared</span><span class="params">()</span> </span>&#123;</div><div class="line">       <span class="keyword">for</span> (;;) &#123;</div><div class="line">           Node h = head;</div><div class="line">           <span class="keyword">if</span> (h != <span class="keyword">null</span> &amp;&amp; h != tail) &#123;</div><div class="line">               <span class="keyword">int</span> ws = h.waitStatus;</div><div class="line">               <span class="keyword">if</span> (ws == Node.SIGNAL) &#123;</div><div class="line">                   <span class="keyword">if</span> (!compareAndSetWaitStatus(h, Node.SIGNAL, <span class="number">0</span>))</div><div class="line">                       <span class="keyword">continue</span>;            <span class="comment">// loop to recheck cases</span></div><div class="line">                   unparkSuccessor(h);</div><div class="line">               &#125;</div><div class="line">               <span class="keyword">else</span> <span class="keyword">if</span> (ws == <span class="number">0</span> &amp;&amp;</div><div class="line">                        !compareAndSetWaitStatus(h, <span class="number">0</span>, Node.PROPAGATE))</div><div class="line">                   <span class="keyword">continue</span>;                <span class="comment">// loop on failed CAS</span></div><div class="line">           &#125;</div><div class="line">           <span class="keyword">if</span> (h == head)                   <span class="comment">// loop if head changed</span></div><div class="line">               <span class="keyword">break</span>;</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>在AQS中，其核心数据是一个改造过的CLH自旋锁队列。是一个双端队列，Node节点的pre和next分别标示前前、后节点。节点数据包含当前线程和状态信息。</p>
+<h3 id="wait"><a href="#wait" class="headerlink" title="wait()"></a>wait()</h3><p>当需要阻塞的地方，就调用CountDownLatch的wait()，这时候阻塞等待countDown。阻塞时，调用的是AQS的acquireSharedInterruptibly(1)：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">await</span><span class="params">()</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</div><div class="line">       sync.acquireSharedInterruptibly(<span class="number">1</span>);</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>在AQS的这个方法中，</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">acquireSharedInterruptibly</span><span class="params">(<span class="keyword">int</span> arg)</span></span></div><div class="line"><span class="function">        <span class="keyword">throws</span> InterruptedException </span>&#123;</div><div class="line">    <span class="keyword">if</span> (Thread.interrupted())</div><div class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException();</div><div class="line">    <span class="keyword">if</span> (tryAcquireShared(arg) &lt; <span class="number">0</span>)			<span class="comment">// 先直接获取锁，如果失败则进入自旋</span></div><div class="line">        doAcquireSharedInterruptibly(arg);  <span class="comment">// 如果当前status小于0，则在这个函数中自旋</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>而这儿的tryAcquireShared(int)，在AQS是protected方法，即要求子类实现的。这儿是在CountDownLatch中实现的：查询其state，如果是0则返回1否则返回-1。</p>
+<p>我们再来看AQS的doAcquireSharedInterruptibly(int)：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">doAcquireSharedInterruptibly</span><span class="params">(<span class="keyword">int</span> arg)</span></span></div><div class="line"><span class="function">    <span class="keyword">throws</span> InterruptedException </span>&#123;</div><div class="line">    <span class="keyword">final</span> Node node = addWaiter(Node.SHARED);  <span class="comment">// 以安全的方式添加一个共享节点到队列尾</span></div><div class="line">    <span class="keyword">boolean</span> failed = <span class="keyword">true</span>;</div><div class="line">    <span class="keyword">try</span> &#123;</div><div class="line">        <span class="keyword">for</span> (;;) &#123;</div><div class="line">            <span class="keyword">final</span> Node p = node.predecessor();</div><div class="line">            <span class="keyword">if</span> (p == head) &#123;		<span class="comment">//如果前一个节点是head，则当前节点就是等待获取锁的节点</span></div><div class="line">                <span class="keyword">int</span> r = tryAcquireShared(arg);	<span class="comment">// 尝试获取锁。</span></div><div class="line">                <span class="keyword">if</span> (r &gt;= <span class="number">0</span>) &#123;</div><div class="line">                    setHeadAndPropagate(node, r); <span class="comment">//获取锁成功，重置head节点</span></div><div class="line">                    p.next = <span class="keyword">null</span>; <span class="comment">// help GC</span></div><div class="line">                    failed = <span class="keyword">false</span>;</div><div class="line">                    <span class="keyword">return</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span> (shouldParkAfterFailedAcquire(p, node) &amp;&amp;</div><div class="line">                parkAndCheckInterrupt())</div><div class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> InterruptedException();</div><div class="line">        &#125;</div><div class="line">    &#125; <span class="keyword">finally</span> &#123;</div><div class="line">        <span class="keyword">if</span> (failed)</div><div class="line">            cancelAcquire(node);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>队列中的head和tail是lazy initialize。来看看addWaiter(Node):</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> Node <span class="title">addWaiter</span><span class="params">(Node mode)</span> </span>&#123;</div><div class="line">    Node node = <span class="keyword">new</span> Node(Thread.currentThread(), mode);</div><div class="line">    <span class="comment">// Try the fast path of enq; backup to full enq on failure</span></div><div class="line">    Node pred = tail;</div><div class="line">    <span class="keyword">if</span> (pred != <span class="keyword">null</span>) &#123;		<span class="comment">//当前的tail不是空，则将新建的节点加到队尾。</span></div><div class="line">        node.prev = pred;</div><div class="line">        <span class="keyword">if</span> (compareAndSetTail(pred, node)) &#123;</div><div class="line">            pred.next = node;</div><div class="line">            <span class="keyword">return</span> node;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    enq(node);			<span class="comment">// tail是空，则初始化一下head和tail</span></div><div class="line">    <span class="keyword">return</span> node;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><ul>
+<li>CLH锁，MCS锁，自旋锁，排队自旋锁</li>
+<li>CAS实现原理和CPU指令</li>
+<li>AbstractQueuedSynchronizer的扩展</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2017/01/08/car-insurance/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/01/08/car-insurance/" itemprop="url">car-insurance</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-08T20:23:58+08:00">
+                2017-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>有车的人，肯定快到购车日时，会收到很多的电话和短信：推销车险。</p>
+<p>我觉得我买的最值的是去年给我家里的第一辆车、一辆6年多的车购买的车险，车险是从人保官网购买的，当时打完折是这样的：</p>
+<p><img src="2017/01/08/car-insurance/insurance-1.png" alt="保单信息"></p>
+<p>但这个保单还送个“大礼包”，我使用过的有至少值 <em>1000</em> 元了：</p>
+<ul>
+<li>验车券。可供验车费用一次，验车应该要交费400多的样子，用券就不用交钱了。</li>
+<li>汽车保养券。可上门或到店保养一次。我保养了我的另一辆车，小保养的机油机滤+工时费，价值500元</li>
+<li>宽途洗车券（6次）。我洗车很少，一共用了5次，至少价值100元吧。</li>
+<li>还有一些没用上的券：代验车券、玻璃修复券、更换防雾霾滤芯券（这个年前应该用一下的，不小心过期了）、钣金修复券等。</li>
+</ul>
+<p>同时，通过人保的推荐系统，还有返京东E卡，这半年我的推荐收入至少有 <em>2000</em> 块。他的推荐规则是这样的：</p>
+<ul>
+<li>使用我的推荐码（ <strong><em>130玖4妻14691</em></strong>）在人保官网购买车险，购买车险者会额外多送50元京东 E 卡，我也会得50元京东 E 卡。</li>
+<li>我推荐的用户，再推荐人购买，我也会额外多得10元的京东 E 卡。</li>
+</ul>
+<p>这半年，我从京东买东西基本没花过现金了。看看我的收益，还不错。近7年前一直用人保，感觉挺好。当然从人保官网购买，比 4s 店、电话销售的便宜不少，与淘宝车险持平（配送人员，和淘宝车险都相同）。（注：特别便宜的保险要看看保险合同，是否有限制驾驶人和行驶区域。如果有限制驾驶人和行驶区域，意味着其它人，或在限制的行驶区域之外出现交通事故，保险公司免责，即不承担理赔责任，这种保险一定要注意）。现在购买车险的渠道很多，一定要通过靠谱的渠道购买。</p>
+<p><img src="2017/01/08/car-insurance/insurance-2.png" alt="推荐奖品"></p>
+<p>最后，车险快到期的朋友，欢迎大家使用我的 <strong>人保推荐码</strong> 推荐码在人保官网购买车险：130玖4妻14691 (记得换为全数字)，购买地址： <a href="http://www.epicc.com.cn/branch/beijing/pcjdsg/" target="_blank" rel="external">http://www.epicc.com.cn/branch/beijing/pcjdsg/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2016/12/31/bye-2016/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/31/bye-2016/" itemprop="url">bye-2016</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-31T18:45:21+08:00">
+                2016-12-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="bye-bye-2016"><a href="#bye-bye-2016" class="headerlink" title="bye-bye 2016"></a>bye-bye 2016</h1><p>转眼间2016又过去了。</p>
+<p>2016，不好，但也不坏，至少还活着。</p>
+<h2 id="要感谢的"><a href="#要感谢的" class="headerlink" title="要感谢的"></a>要感谢的</h2><p>首先，要感谢家人健康。家人的健康比什么都重要。人活着，最差的是需要别人的帮助，起次是能自理自足，好的是在有能力的基础下帮助别人。生病，全家都需要付出精力。今年虽然有过一些小病，但均是门诊可以搞定的。<br>现在我不断的咳嗽，是现在北方的空气太差导致的？不会是肺癌、肺吸虫、×××之类的大病吧？^O^</p>
+<p>其它，今年开车较多。每天下下班要近70km，则70*5*52=18200km。虽然有些假期不需要开车，但有时候周末或假期还要远途不是么？我觉得今年至少要开了1.5万公里吧。感谢我家的车没撂挑子，感谢路上的其他司机的“不杀之恩”，感谢专业碰瓷的没招惹我，感谢路上的行要对我的忍让。虽然我偶有不规矩的驾驶行为，2017争取更文明驾驶。</p>
+<h3 id="今年的进步"><a href="#今年的进步" class="headerlink" title="今年的进步"></a>今年的进步</h3><p>感觉今年没什么进步，哈哈，工作的，学习的，生活的。</p>
+<p>今年孩子上小学了，嗯，小学。觉得上小学也挺辛苦的，每天要6:30起床，春夏秋冬。。。不过我也得跟着6:30起床送娃。</p>
+<p>今年更大的重点放在了生活和带娃了。因妻子下半年的有自己的事忙，大部分的时间需要带娃。平时下班较晚，到家晚上8点算早的，到家10点是经常的。回来要辅导和检查孩子作业、督促刷牙洗脸睡觉，偶尔要晚上11点才能上床，有次还近12点了。周末，要带娃、上各种培训班，偶儿去下游乐园或看个电影，可自己安排的时间很少。我觉得工作忙，对孩子的习惯培训也有耽误，对孩子有亏欠。但自己已经尽力了。</p>
+<p>工作上，这个行业基本没有不加班的。因家里事情较多，工作上做的不够出色。继续努力，争取后续几个月更出色。</p>
+<p>虽然没什么进步，但感觉自己的身体素质，远不如前了。</p>
+<h3 id="明年展望"><a href="#明年展望" class="headerlink" title="明年展望"></a>明年展望</h3><p>家人健康，工作进步，孩子学习成绩不差。另外就是，每个月的收入够还信用卡的。。。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2016/12/22/about-create-dns-server/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/22/about-create-dns-server/" itemprop="url">有关自建DNS服务器并创建DNS名字</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-22T23:00:00+08:00">
+                2016-12-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>今天有个兄弟公司咨询我有关迁移DNS的技术相关的事情，了解如何做准备，如何能稳妥的把DNS由第三方服务商迁移到自建的DNS上。最近可能一是由于大公司对DNS解析安全越来越重视，或者最近DNS攻击越来越严重，可能觉得自己维护DNS解析更有底气。但迁移DNS这件事，有时候会比较复杂，并且容易出错（更多的是不平滑，在迁移过程中网站访问有时好有时坏、有的地区好有的地区不好）。</p>
+<p>由于域名解析是个从上到下的过程（DNS系统可以说是全球最庞大、最基础的“云”服务），不但要了解如何搭建DNS，还要和注册商打交交道，以及碰到问题时如何排查。尤其是当自己使用的ns名称不存在时，可能要创建NS的名字。</p>
+<h1 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h1><p>通用的来讲DNS就是解析，但在DNS行业内，要用更细化的名字。在这里我解释的可能不太准确，但目的是用大家能理解的词简单解释一下，更细的请参阅技术书籍或手册：</p>
+<h3 id="注册局-域名注册管理机构"><a href="#注册局-域名注册管理机构" class="headerlink" title="注册局/域名注册管理机构"></a>注册局/域名注册管理机构</h3><p>每个域名的tld由一家注册局来负责运营，如.com类域名由Verisign负责，.cn域名由CNNIC负责。注册局接收注册商的请求来管理domain、contact和host</p>
+<h3 id="注册商-域名注册服务机构"><a href="#注册商-域名注册服务机构" class="headerlink" title="注册商/域名注册服务机构"></a>注册商/域名注册服务机构</h3><p>接收最终用户的请求，并向注册局注册和管理域名。我们注册域名，一直是向注册商注册，注册商有系统与注册局通信。</p>
+<h3 id="顶级域"><a href="#顶级域" class="headerlink" title="顶级域"></a>顶级域</h3><p>域名是由右向左以“.”分割的符号，越往右级别越高。一个顶级域有相应的注册局来运营和管理。如cn就是一个顶级域。</p>
+<h3 id="后缀"><a href="#后缀" class="headerlink" title="后缀"></a>后缀</h3><p>一个顶级域，可能有多个域名后缀，一个域名后缀＋一个个性字符，就能组成一个域名。如cn、com.cn、net.cn均是域名后缀。</p>
+<h3 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h3><p>一组字符+域名后缀，组成一个域名。如codox.cn、codox.net、foo.com.cn、bar.org.cn等。</p>
+<h3 id="主机记录"><a href="#主机记录" class="headerlink" title="主机记录"></a>主机记录</h3><p>域名之后，可以创建多个解析记录，可用于web站点等，如journal.codox.cn。又叫完全限定名（fully qualified domain name,FQDN）</p>
+<h3 id="hostObject-dns记录"><a href="#hostObject-dns记录" class="headerlink" title="hostObject/dns记录"></a>hostObject/dns记录</h3><p>域名(主域名，不是指主机记录)使用的NS，如codox.cn使用的是dns7.hichina.com和dns8.hichina.com</p>
+<h1 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h1><p>对于有可能涉及到以下几种：</p>
+<ul>
+<li>伪自建：不走寻常路，自己用的域名后缀比较奇特，注册后修改DNS为第三方/或以前的自建的解析服务器时时，报“DNS服务器不合法”之类错误</li>
+<li>自建DNS，NS服务解析自己的域名：如自己的域名为codox.cn，使用的DNS为ns1.codox.cn/ns2.codox.cn</li>
+<li>自建DNS，但有多个不同后缀的域名，使用同一组DNS</li>
+</ul>
+<h2 id="伪自建"><a href="#伪自建" class="headerlink" title="伪自建"></a>伪自建</h2><p>有时候会碰到客户申请了域名foo.site域名做个人网站，使用第三方解析，如ns1.myns.com/ns2.myns.com。但在注册商处修改foo.site的DNS为ns1.myns.com/ns2.myns.com时报错，提示“DNS不合法”、”DNS不存在”之类的。com后缀的域名使用这组DNS没事，site域名就不行？为什么呢？</p>
+<p>域名在使用某个DNS时，必须要通过注册商在注册局注册、必须要通过注册商在注册局注册、必须要通过注册商在注册局注册。如foo.site域名要使用ns1.myns.com这个DNS，必须要有注册商在<strong>site注册局</strong>注册一下ns1.myns.com这个DNS(注册时只需要填写这个ns1.myns.com名字即可，不需要额外信息)。只要有一个注册商在site注册局注册过后，以后任何<em>*</em>.site域名均可以使用ns1.myns.com这个ns了。你懂的，ns2.myns.com类似。</p>
+<p>有的同学可能发现，这个ns(.com)的后缀和用这个ns的域名的后缀(.site)不同，这类情况在注册ns时不需要填写ns对应的服务器的ip，纯报备，所以部分注册商对这个流程进行了优化：<em>当有人用这种跨后缀的ns时，如果域名所有的注册局不存在，就注册一下。</em></p>
+<p>当然，为什么要注册，要走这个流程？反正ns1.myns.com这个NS也不会写入site的顶级域DNS系统，为何多此一举？我也觉得烦琐，多此一举，但这是域名注册系统的标准(EPP)规定的。</p>
+<h2 id="自建DNS"><a href="#自建DNS" class="headerlink" title="自建DNS"></a>自建DNS</h2><p>有的大公司，或有技术追求想自己搭建dns做自己域名的解析的，可能会有此需求。我们以我的域名来做例子：</p>
+<p>1.　域名：codox.cn，域名已经注册。<br>2.　使用的DNS：ns1.codox.cn、ns2.codox.cn，尚未创建。<br>3.　DNS服务器2台，ip分别为:1.1.1.1、2.2.2.2。服务器已经购买。</p>
+<p><strong>创建hostObject</strong></p>
+<p>这是第一步：要向cn注册局注册ns1.codox.cn和ns2.codox.cn这两个DNS，并创建dns对应的ip。</p>
+<p>如何创建？每家注册商的操作方式不同，以阿里云和godaddy为例子说明：</p>
+<p>​    <strong>在阿里云创建hostObject</strong></p>
+<p>在阿里云创建hostObject，叫“域名服务器注册”。位置：登陆控制台后，在左侧点击“域名”打开域名列表，点击codox.cn域名后面的“管理”打开域名控制台（就是打开管理解析记录的那儿后，点击页面上方导航栏的“基本管理”）。在域名控制台，点击左侧的“DNS修改/创建”，右侧会看到有个“域名服务器注册/修改”的按钮，点进去后就有注册的位置了。以我的例子，要选择“解析国内英文域名”</p>
+<p>​    <strong>在godaddy创建hostObject</strong></p>
+<p>在godaddy(中文界面)叫“创建主机名”，在控制面板点击域名进行域名详情的“设置”标签，下面有个“主机名”栏目，点击“管理”可看到已添加的hostObject，当然也可以创建。</p>
+<p><strong>修改DNS</strong></p>
+<p>兵分两路，创建dns的同时，可能要同步搭建dns服务器上的解析服务器软件，如bind。此处blabla相信老司机很熟悉了。</p>
+<p>创建后，除了要添加www.codox.cn.、jounal.codox.cn.等解析记录外，<strong>一定要记得添加下面的几条记录，否则域名会不正常</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">codox.cn.		IN	NS	ns1.codox.cn.</div><div class="line">codox.cn.		IN	NS	ns2.codox.cn.</div><div class="line">ns1.codox.cn.	IN	A	1.1.1.1</div><div class="line">ns2.codox.cn.	IN	A	2.2.2.2</div></pre></td></tr></table></figure>
+<p>添加完后，运行以下命令看这正常不：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">dig		codox.cn	NS	@1.1.1.1</div><div class="line">dig		codox.cn	NS	@2.2.2.2</div><div class="line">dig		ns1.codox.cn	@1.1.1.1</div><div class="line">dig		ns2.codox.cn	@1.1.1.1</div><div class="line">dig		ns1.codox.cn	@2.2.2.2</div><div class="line">dig		ns2.codox.cn	@2.2.2.2</div><div class="line">dig		othe.your.record.codox.cn	@1.1.1.1</div></pre></td></tr></table></figure>
+<p>以上检查确认没问题后，就可以在注册商处修改域名的NS记录为ns1.codox.cn和ns2.codox.cn了。</p>
+<p>注意：<strong>修改后，原来的dns服务器上的解析记录在48小时内不要删除，并且保持上面的解析记录正确。</strong></p>
+<h2 id="自建DNS-共用"><a href="#自建DNS-共用" class="headerlink" title="自建DNS-共用"></a>自建DNS-共用</h2><p>如果上面codox.cn使用了ns1/2.codox.cn这组dns后，我又注册了个codox.net域名，也要同样使用ns1/2.codox.cn，怎么办呢？要在.net注册局创建hostObject，因为只要我用了这组dns，别人的net域名肯定没用过，也肯定没人帮我创建过。所以我的codox.net域名使用这组dns，就要在.net的注册局创建这组dns（其实是报备吧）。但如何创建呢？分两种：</p>
+<p>1.　需要手工创建。对于需要手工创建的，由用codox.cn这个域名的账号登陆，管理codox.cn这个域名，按上述的“创建hostObject”的方式创建dns，并且用途要用于解析“.net域名”。<br>2.　自动创建。对于有些注册商，你使用的这种交叉注册局的ns，如果在.net注册局不存在ns1.codox.cn，会自动创建。如godaddy。</p>
+<h1 id="其它问题"><a href="#其它问题" class="headerlink" title="其它问题"></a>其它问题</h1><ul>
+<li>一个域名可以使用几个NS?<br>最多可以写13个ns，如google.com就用了13个ns名字。</li>
+<li>一个ns可以使用多个ip吗？<br>可以，最多可以使用13个IP。并且可以添加ipv6地址。</li>
+<li>我的自建dns工作正常，使用这个dns的域名的网站也能访问，但dig mydomain.com ns时，就是不返回ns记录，为什么？<br>你的域名在注册局的dns中，把域名正常授权给了您的自建dns。但你的自建dns中，mydomain.com NS记录没写。在dig或nslookup时，当从顶级域的dns中获取到mydomain.com NS ns<em>.mydomain.com后，仍会去ns</em>.mydomain.com上查询一次mydomain.com的NS记录，如果没写就返回空了。但一般www.mydomain.com的主机记录能正常使用，网站能正常访问。</li>
+<li>什么样的hostObject注册时需要填写ip，什么样的不需要？<br>当dns名字的后缀，和将要使用这个ns的域名-的后缀，两个后缀归同一家注册局时，就必须要填写ip，且要这个域名的持有人才能注册。否则就不需要填写ip，任何注册商都可以。</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2016/12/17/Raspberry-And-Cam/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/17/Raspberry-And-Cam/" itemprop="url">Raspberry And Cam</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-17T17:35:39+08:00">
+                2016-12-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>春节期间家里长期没人，想做个大门口的监控。现在有些不错的“智能”摄像头，能做到有活物报警等，但考虑到未来的扩展性和灵活性，再加上玩票，选择了树莓派。</p>
+<h1 id="材料准备"><a href="#材料准备" class="headerlink" title="材料准备"></a>材料准备</h1><h2 id="采购"><a href="#采购" class="headerlink" title="采购"></a>采购</h2><ul>
+<li>树莓派2代B型 raspberry pi2 model B 现货 喜迎春节[交易快照]200.00</li>
+<li>包邮 树莓派摄像头500万像素RASPBERRY PI RPI CAMERA OV5647模块[交易快照] 72.90</li>
+<li>EDUP EP-N8508GS黄金版 迷你USB无线网卡 树莓派专用[交易快照] 27.00</li>
+<li>树莓派摄像头延长线500mm 加长排线 50CM Raspberry Pi camera[交易快照] 3.00</li>
+<li>YS-18 HC-SR501 人体红外感应模块 进口探头 防盗感应开关模块[交易快照] 3.70</li>
+<li>电磁式蜂鸣器5V 采用SOT塑封管 5V有源蜂鸣器 蜂鸣器[交易快照] 0.39</li>
+<li>LED灯实验包 包含10个LED+10个电阻 适合树莓派MCU入门[交易快照] 2.97</li>
+<li>40P 杜邦公头转母头 杜邦线 公对母 面包线 20CM长 40根一排 特价[交易快照] 2.81</li>
+</ul>
+<h2 id="自有"><a href="#自有" class="headerlink" title="自有"></a>自有</h2><ul>
+<li>SD 卡16G</li>
+<li>USB电源转换器</li>
+<li>USB 线</li>
+<li>胶带、双面胶、硬纸壳（给摄像头和人体感觉模块粘了个外壳）</li>
+<li>冰雪聪明才智</li>
+</ul>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="树莓派系统"><a href="#树莓派系统" class="headerlink" title="树莓派系统"></a>树莓派系统</h2><p>去<a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="external">https://www.raspberrypi.org/downloads/raspbian/</a> 下载 RASPBIAN JESSIE 镜像，然后按 <a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank" rel="external">镜像安装说明</a>把下载的 raspbian 写到 SD 卡中，把 sd 卡插入树莓派；把 usb 无线网卡插到树莓派；把网张插入树莓派；把 usb 线插入树莓派，不出意外的话树莓派上的有些灯就亮了，启动了。</p>
+<p>ssh 登陆树莓派（默认主机名是raspberrypi，默认密码是 raspberry），先配置无线网卡，vi 打开文件 /etc/wpa_supplicant/wpa_supplicant.conf，插入下面4行：<br>network={<br>    ssid=”YOUR_SSID”<br>    psk=”YOUR_WIFI_PASSWORD”<br>}</p>
+<p>然后试试能否用无线连上。</p>
+<h2 id="更新系统"><a href="#更新系统" class="headerlink" title="更新系统"></a>更新系统</h2><ul>
+<li>把更新源换为日本的（日本的感觉比较快）（把所有行注释掉，添加一行 <code>deb http://ftp.jaist.ac.jp/raspbian  jessie main contrib non-free rpi</code><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get upgrade</div><div class="line">sudo rpi-update</div><div class="line">sudo apt-get install python-rpi.gpio</div><div class="line">sudo apt-get install python3-rpi.gpio</div><div class="line">sudo reboot</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="系统配置（扩展文件系统和打开摄像头模块）"><a href="#系统配置（扩展文件系统和打开摄像头模块）" class="headerlink" title="系统配置（扩展文件系统和打开摄像头模块）"></a>系统配置（扩展文件系统和打开摄像头模块）</h2><p>sudo raspi-config<br>选择1 Expand Filesystem，回车<br>选择 5 Enable Camera，Enable，回车<br>然后到主菜单后，按右箭头，选中 Finish 后，回国，是否重启时，选择重启；<br>关机（拔电源）后，把摄像头装上（注意别装在 Dispaly 槽了，两个插口差不多，我为这事搞了一晚上奇怪为何摄像头检测不到呢）</p>
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>把摄像头和人体红外感应模块穿过防盗门，贴在门外，然后把红外感应模块和树莓派连起来；我在树莓派上又装了一个 LED 灯和蜂鸣器<br>下面是代码（python3是现学的，写的比较渣。本来是用的多线程和锁机制，以让录像的同时 led 闪、蜂鸣器响，但不知道为何重复触发时树莓派就死机，就单线程了）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python3</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> RPi.GPIO <span class="keyword">as</span> GPIO</div><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="keyword">import</span> threading</div><div class="line"></div><div class="line">HCPIN = <span class="number">12</span></div><div class="line">LEDPIN = <span class="number">11</span></div><div class="line">BUZZPIN = <span class="number">13</span></div><div class="line"></div><div class="line">phone_dir = <span class="string">'/mnt/doorkeeper/'</span></div><div class="line">temp_dir = <span class="string">'/home/pi/temp'</span></div><div class="line"><span class="comment">#mutex = threading.Lock()</span></div><div class="line"><span class="comment">#log_lock= threading.Lock()</span></div><div class="line"></div><div class="line"><span class="comment">#初始化</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">init</span><span class="params">()</span>:</span></div><div class="line">    GPIO.setwarnings(<span class="keyword">False</span>)</div><div class="line">    GPIO.setmode(GPIO.BOARD)</div><div class="line">    GPIO.setup(HCPIN,GPIO.IN)</div><div class="line">    GPIO.setup(LEDPIN,GPIO.OUT)</div><div class="line">    GPIO.setup(BUZZPIN,GPIO.OUT)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">capture</span><span class="params">()</span>:</span></div><div class="line"></div><div class="line">    mylog(<span class="string">'prepare start to capture.'</span>)</div><div class="line">    filename=<span class="string">"video-"</span> + time.strftime(<span class="string">"%Y%m%d%H%M%S"</span>, time.localtime()) + <span class="string">".h264"</span></div><div class="line">    h264absfile = os.path.join(temp_dir,filename)</div><div class="line"></div><div class="line">    <span class="comment">#if mutex.acquire(1):</span></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        mylog(<span class="string">"capture start."</span>)</div><div class="line">        os.system(<span class="string">"raspivid  -w 1280 -h 720 -t 15000 -fps 20 -o "</span> + h264absfile )</div><div class="line">        mylog(<span class="string">"capture end."</span>)</div><div class="line"></div><div class="line">        <span class="comment"># 文件存在，开始编码转换为mp4</span></div><div class="line">        <span class="keyword">if</span> os.path.exists(h264absfile):</div><div class="line">            subdir = time.strftime(<span class="string">"%Y%m%d"</span>, time.localtime())</div><div class="line">            mp4dir = os.path.join(phone_dir, subdir)</div><div class="line"></div><div class="line">            <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(mp4dir):</div><div class="line">                mylog(<span class="string">"mkdir "</span> + mp4dir)</div><div class="line">                os.mkdir(mp4dir)</div><div class="line">            mp4filename= filename + <span class="string">".mp4"</span></div><div class="line">            mp4absfile = os.path.join(mp4dir, mp4filename)</div><div class="line">            mylog(<span class="string">"encode "</span> + mp4absfile+ <span class="string">" start."</span>)</div><div class="line">            os.system(<span class="string">"MP4Box -quiet -fps 20 -add "</span> + h264absfile + <span class="string">" "</span> + mp4absfile)</div><div class="line">            os.remove(h264absfile)</div><div class="line">            mylog(<span class="string">"encode h264:"</span> + h264absfile + <span class="string">" to  mp4file:"</span> + mp4absfile + <span class="string">" end."</span>)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            mylog(<span class="string">"encode cancel(file "</span> + h264absfile + <span class="string">" not exists."</span>)</div><div class="line">    <span class="keyword">finally</span>:</div><div class="line">        <span class="keyword">pass</span></div><div class="line">      <span class="comment">#      mutex.release()</span></div><div class="line"></div><div class="line">    <span class="comment">#else:</span></div><div class="line">    <span class="comment">#    mylog("acquire lock fail, capture cancel.")</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">#感应器侦测函数</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">detct</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">while</span>(<span class="number">1</span>):</div><div class="line">        <span class="comment">#normal()</span></div><div class="line">        <span class="comment">#如果感应器针脚输出为True，则打印信息并执行蜂鸣器函数</span></div><div class="line">        <span class="keyword">if</span> GPIO.input(HCPIN) == <span class="keyword">True</span>:</div><div class="line">            mylog(<span class="string">"somebody there!"</span>)</div><div class="line">            shine(<span class="number">2</span>)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            <span class="comment">#mylog("none")</span></div><div class="line">            time.sleep(<span class="number">2</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">shine</span><span class="params">(t)</span>:</span></div><div class="line">    <span class="comment">#t1 = threading.Thread(target=capture)</span></div><div class="line">    <span class="comment">#t1.start()</span></div><div class="line"></div><div class="line">    trys = int(t) * <span class="number">1</span>;</div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        <span class="keyword">while</span> trys &gt; <span class="number">0</span>:</div><div class="line">            GPIO.output(LEDPIN,GPIO.HIGH)</div><div class="line">            GPIO.output(BUZZPIN,GPIO.HIGH)</div><div class="line">            time.sleep(<span class="number">0.1</span>)</div><div class="line">            GPIO.output(LEDPIN,GPIO.LOW)</div><div class="line">            GPIO.output(BUZZPIN,GPIO.LOW)</div><div class="line">            time.sleep(<span class="number">0.1</span>)</div><div class="line">            trys -= <span class="number">1</span></div><div class="line">        <span class="comment">## 获取</span></div><div class="line">        capture()</div><div class="line">    <span class="keyword">finally</span>:</div><div class="line">        GPIO.output(LEDPIN,GPIO.LOW)</div><div class="line">        GPIO.output(BUZZPIN,GPIO.LOW)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">normal</span><span class="params">()</span>:</span></div><div class="line">    mount_nfs_flag = os.popen(<span class="string">"mount -l | grep doorkeeper | wc -l"</span>).read()</div><div class="line">    mount_nfs_flag = int(mount_nfs_flag)</div><div class="line">    <span class="keyword">if</span> mount_nfs_flag  &lt;= <span class="number">0</span>:</div><div class="line">        mylog(<span class="string">"mount fail? remount nfs"</span>)</div><div class="line">        os.system(<span class="string">"sudo mount.nfs 192.168.0.117:/volume1/doorkeeper /mnt/doorkeeper -o nolock"</span>)</div><div class="line"></div><div class="line">    min=int(time.strftime(<span class="string">"%M"</span>))</div><div class="line">    sec=int(time.strftime(<span class="string">"%S"</span>))</div><div class="line">    <span class="keyword">if</span> min % <span class="number">10</span> == <span class="number">0</span> <span class="keyword">and</span> sec % <span class="number">60</span> &lt;= <span class="number">4</span> :</div><div class="line">        t1 = threading.Thread(target=capture)</div><div class="line">        t1.start()</div><div class="line"></div><div class="line">        trys = <span class="number">2</span></div><div class="line">        <span class="keyword">while</span> trys &gt; <span class="number">0</span>:</div><div class="line">            GPIO.output(LEDPIN,GPIO.HIGH)</div><div class="line">            GPIO.output(BUZZPIN,GPIO.HIGH)</div><div class="line">            time.sleep(<span class="number">0.25</span>)</div><div class="line">            GPIO.output(LEDPIN,GPIO.LOW)</div><div class="line">            GPIO.output(BUZZPIN,GPIO.LOW)</div><div class="line">            time.sleep(<span class="number">0.25</span>)</div><div class="line">            trys -= <span class="number">1</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">mylog</span><span class="params">(l)</span>:</span></div><div class="line">    <span class="comment">#if log_lock.acquire(5):</span></div><div class="line">        <span class="keyword">try</span>:</div><div class="line">            print(time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>), l)</div><div class="line">            f = open(<span class="string">'/var/log/doorkeep.log'</span>, <span class="string">'a'</span>)</div><div class="line">            f.write(time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S "</span>) + l + <span class="string">"\n"</span>)</div><div class="line">            f.close()</div><div class="line">        <span class="keyword">finally</span>:</div><div class="line">            <span class="keyword">pass</span></div><div class="line">     <span class="comment">#       log_lock.release()</span></div><div class="line"></div><div class="line"></div><div class="line">time.sleep(<span class="number">5</span>)</div><div class="line">init()</div><div class="line">shine(<span class="number">2</span>)</div><div class="line">detct()</div><div class="line"></div><div class="line">GPIO.cleanup()</div></pre></td></tr></table></figure>
+<h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p>上门的效果，外壳好黑好丑（没找到合适的壳）：<br><img src="/2016/12/17/Raspberry-And-Cam/rasp-cam.png" alt="上门效果" title="上门效果"><br>￼￼</p>
+<p>下面是拍到的打扫楼道的阿姨。发现物业较差，好几天才打扫一次。</p>
+<h1 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这个摄像头不是鱼眼摄像头，范围有限；在楼道较暗，如果楼道的声控灯没开，效果很差。</p>
+<h2 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h2><p>可以通过 bypy 把文件同步到云盘。可以写个 app，有人时发送消息，查看录像；可接个 mic 和小喇叭来对话；可换个鱼眼+红外摄像头；可再接个陀机。</p>
+<p>看来，得搞台 ECS了。。。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2016/12/10/first/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/12/10/first/" itemprop="url">hi</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-10T20:31:03+08:00">
+                2016-12-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="新的地址"><a href="#新的地址" class="headerlink" title="新的地址"></a>新的地址</h1><p>每次注册个域名,写几篇,然后就会荒废。再过段时间，发现域名过期了，再过段时间发现主机也过期了，然后可能就忘记续费了。then。。。以前写的内容也没了。<br>这次放到了免费的地方，也不用维护。自己想写了，po上去就好了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/upload/profile_avatar.png"
+              alt="Jacey New" />
+          
+            <p class="site-author-name" itemprop="name">Jacey New</p>
+            <p class="site-description motion-element" itemprop="description">IT从业者，多年老司机。驾龄十余年，熟练驾驶Perl，Java等多种车辆，熟悉互联网路况。现供职于阿里，做域名/DNS相关coding。<br /><本站文章皆原创,所有权利均保留><br /><谢绝转载></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/moxnet" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Zhihu</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/moxnet" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Weibo</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jacey New</span>
+
+  
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

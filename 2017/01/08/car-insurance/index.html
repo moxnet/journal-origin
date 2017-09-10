@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="car,insurance," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="有车的人，肯定快到购车日时，会收到很多的电话和短信：推销车险。 我觉得我买的最值的是去年给我家里的第一辆车、一辆6年多的车购买的车险，车险是从人保官网购买的，当时打完折是这样的：  但这个保单还送个“大礼包”，我使用过的有至少值 1000 元了：  验车券。可供验车费用一次，验车应该要交费400多的样子，用券就不用交钱了。 汽车保养券。可上门或到店保养一次。我保养了我的另一辆车，小保养的机油机滤+">
+<meta name="keywords" content="car,insurance">
+<meta property="og:type" content="article">
+<meta property="og:title" content="car-insurance">
+<meta property="og:url" content="http://journal.codox.cn/2017/01/08/car-insurance/index.html">
+<meta property="og:site_name" content="Jacey&#39;s Journal">
+<meta property="og:description" content="有车的人，肯定快到购车日时，会收到很多的电话和短信：推销车险。 我觉得我买的最值的是去年给我家里的第一辆车、一辆6年多的车购买的车险，车险是从人保官网购买的，当时打完折是这样的：  但这个保单还送个“大礼包”，我使用过的有至少值 1000 元了：  验车券。可供验车费用一次，验车应该要交费400多的样子，用券就不用交钱了。 汽车保养券。可上门或到店保养一次。我保养了我的另一辆车，小保养的机油机滤+">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://journal.codox.cn/2017/01/08/car-insurance/2017/01/08/car-insurance/insurance-1.png">
+<meta property="og:image" content="http://journal.codox.cn/2017/01/08/car-insurance/2017/01/08/car-insurance/insurance-2.png">
+<meta property="og:updated_time" content="2017-09-10T08:40:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="car-insurance">
+<meta name="twitter:description" content="有车的人，肯定快到购车日时，会收到很多的电话和短信：推销车险。 我觉得我买的最值的是去年给我家里的第一辆车、一辆6年多的车购买的车险，车险是从人保官网购买的，当时打完折是这样的：  但这个保单还送个“大礼包”，我使用过的有至少值 1000 元了：  验车券。可供验车费用一次，验车应该要交费400多的样子，用券就不用交钱了。 汽车保养券。可上门或到店保养一次。我保养了我的另一辆车，小保养的机油机滤+">
+<meta name="twitter:image" content="http://journal.codox.cn/2017/01/08/car-insurance/2017/01/08/car-insurance/insurance-1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://journal.codox.cn/2017/01/08/car-insurance/"/>
+
+
+
+
+
+  <title>car-insurance | Jacey's Journal</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-315540-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?73a9602f84ef41cd6ba4d6ee6fe600d1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jacey's Journal</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">我是乱写的 & 千万别当真</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://journal.codox.cn/2017/01/08/car-insurance/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jacey New">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/upload/profile_avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jacey's Journal">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">car-insurance</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-08T20:23:58+08:00">
+                2017-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>有车的人，肯定快到购车日时，会收到很多的电话和短信：推销车险。</p>
+<p>我觉得我买的最值的是去年给我家里的第一辆车、一辆6年多的车购买的车险，车险是从人保官网购买的，当时打完折是这样的：</p>
+<p><img src="2017/01/08/car-insurance/insurance-1.png" alt="保单信息"></p>
+<p>但这个保单还送个“大礼包”，我使用过的有至少值 <em>1000</em> 元了：</p>
+<ul>
+<li>验车券。可供验车费用一次，验车应该要交费400多的样子，用券就不用交钱了。</li>
+<li>汽车保养券。可上门或到店保养一次。我保养了我的另一辆车，小保养的机油机滤+工时费，价值500元</li>
+<li>宽途洗车券（6次）。我洗车很少，一共用了5次，至少价值100元吧。</li>
+<li>还有一些没用上的券：代验车券、玻璃修复券、更换防雾霾滤芯券（这个年前应该用一下的，不小心过期了）、钣金修复券等。</li>
+</ul>
+<p>同时，通过人保的推荐系统，还有返京东E卡，这半年我的推荐收入至少有 <em>2000</em> 块。他的推荐规则是这样的：</p>
+<ul>
+<li>使用我的推荐码（ <strong><em>130玖4妻14691</em></strong>）在人保官网购买车险，购买车险者会额外多送50元京东 E 卡，我也会得50元京东 E 卡。</li>
+<li>我推荐的用户，再推荐人购买，我也会额外多得10元的京东 E 卡。</li>
+</ul>
+<p>这半年，我从京东买东西基本没花过现金了。看看我的收益，还不错。近7年前一直用人保，感觉挺好。当然从人保官网购买，比 4s 店、电话销售的便宜不少，与淘宝车险持平（配送人员，和淘宝车险都相同）。（注：特别便宜的保险要看看保险合同，是否有限制驾驶人和行驶区域。如果有限制驾驶人和行驶区域，意味着其它人，或在限制的行驶区域之外出现交通事故，保险公司免责，即不承担理赔责任，这种保险一定要注意）。现在购买车险的渠道很多，一定要通过靠谱的渠道购买。</p>
+<p><img src="2017/01/08/car-insurance/insurance-2.png" alt="推荐奖品"></p>
+<p>最后，车险快到期的朋友，欢迎大家使用我的 <strong>人保推荐码</strong> 推荐码在人保官网购买车险：130玖4妻14691 (记得换为全数字)，购买地址： <a href="http://www.epicc.com.cn/branch/beijing/pcjdsg/" target="_blank" rel="external">http://www.epicc.com.cn/branch/beijing/pcjdsg/</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/car/" rel="tag"># car</a>
+          
+            <a href="/tags/insurance/" rel="tag"># insurance</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/31/bye-2016/" rel="next" title="bye-2016">
+                <i class="fa fa-chevron-left"></i> bye-2016
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/10/multi-thread-coutdownlatch/" rel="prev" title="多组程组件之CountDownLatch">
+                多组程组件之CountDownLatch <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/upload/profile_avatar.png"
+              alt="Jacey New" />
+          
+            <p class="site-author-name" itemprop="name">Jacey New</p>
+            <p class="site-description motion-element" itemprop="description">IT从业者，多年老司机。驾龄十余年，熟练驾驶Perl，Java等多种车辆，熟悉互联网路况。现供职于阿里，做域名/DNS相关coding。<br /><本站文章皆原创,所有权利均保留><br /><谢绝转载></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/moxnet" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Zhihu</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/moxnet" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-globe"></i>Weibo</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jacey New</span>
+
+  
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
