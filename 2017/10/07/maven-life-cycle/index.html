@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java,maven," />
+  <meta name="keywords" content="maven,java," />
 
 
 
@@ -96,7 +96,7 @@
 
 
 <meta name="description" content="maven 的生命周期Maven 的生命周期就是为了对所有的构建过程进行抽象和统一。用maven在构建时，有三套生命周期：  clean default site  这三套生命周期，涵盖了项目的清理、编译、测试、打包、部署等。 各周期的阶段clean周期在clean周期内，有以下三个阶段(phase)，意义如其phase的名字：  pre-clean clean post-clean  defau">
-<meta name="keywords" content="java,maven">
+<meta name="keywords" content="maven,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="maven-life-cycle">
 <meta property="og:url" content="http://journal.codox.cn/2017/10/07/maven-life-cycle/index.html">
@@ -498,7 +498,7 @@
 </tbody>
 </table>
 <h2 id="其它和插件及周期相关的"><a href="#其它和插件及周期相关的" class="headerlink" title="其它和插件及周期相关的"></a>其它和插件及周期相关的</h2><h3 id="从命令行直接运行插件目标"><a href="#从命令行直接运行插件目标" class="headerlink" title="从命令行直接运行插件目标"></a>从命令行直接运行插件目标</h3><p>一般是通过mvn运行maven生命周期中的阶段(phase)，间接运行phase绑定了插件对应的目标(goal)。我们也可以直接运行插件的目标，如下就是运行maven-dependency-plugin插件的tree目标：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:tree   # 这儿可简写为 mvn dependency:tree</div><div class="line">[INFO] Scanning for projects...</div><div class="line">[INFO]</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO] Building Archetype - demo-mvn 1.0-SNAPSHOT</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO]</div><div class="line">[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ demo-mvn ---</div><div class="line">[INFO] net.codox.demo:demo-mvn:jar:1.0-SNAPSHOT</div><div class="line">[INFO] \- org.springframework:spring-aop:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]    +- aopalliance:aopalliance:jar:1.0:compile</div><div class="line">[INFO]    +- org.springframework:spring-asm:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]    +- org.springframework:spring-beans:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]    \- org.springframework:spring-core:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]       \- commons-logging:commons-logging:jar:1.1.1:compile</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO] BUILD SUCCESS</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO] Total time: 1.198 s</div><div class="line">[INFO] Finished at: 2017-10-07T22:17:11+08:00</div><div class="line">[INFO] Final Memory: 7M/81M</div><div class="line">[INFO] ------------------------------------------------------------------------</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:tree   <span class="comment"># 这儿可简写为 mvn dependency:tree</span></span></div><div class="line">[INFO] Scanning for projects...</div><div class="line">[INFO]</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO] Building Archetype - demo-mvn 1.0-SNAPSHOT</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO]</div><div class="line">[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ demo-mvn ---</div><div class="line">[INFO] net.codox.demo:demo-mvn:jar:1.0-SNAPSHOT</div><div class="line">[INFO] \- org.springframework:spring-aop:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]    +- aopalliance:aopalliance:jar:1.0:compile</div><div class="line">[INFO]    +- org.springframework:spring-asm:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]    +- org.springframework:spring-beans:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]    \- org.springframework:spring-core:jar:3.1.0.RELEASE:compile</div><div class="line">[INFO]       \- commons-logging:commons-logging:jar:1.1.1:compile</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO] BUILD SUCCESS</div><div class="line">[INFO] ------------------------------------------------------------------------</div><div class="line">[INFO] Total time: 1.198 s</div><div class="line">[INFO] Finished at: 2017-10-07T22:17:11+08:00</div><div class="line">[INFO] Final Memory: 7M/81M</div><div class="line">[INFO] ------------------------------------------------------------------------</div></pre></td></tr></table></figure>
 <h3 id="插件的解析"><a href="#插件的解析" class="headerlink" title="插件的解析"></a>插件的解析</h3><p>上节的命令 mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:tree  可简写为 mvn dependency:tree，即插件的groupId:artifactId:version，直接简写成了dependency，这个是使用了插件前缀来简写的。</p>
 <ul>
 <li>插件也有仓库，和配置maven仓库的repositories一样，只是插件仓库的配置项为pluginRepositories。一般不需要配置自己的插件仓库。</li>
@@ -533,9 +533,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"># java</a>
-          
             <a href="/tags/maven/" rel="tag"># maven</a>
+          
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
